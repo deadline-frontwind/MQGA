@@ -43,8 +43,7 @@ jobs:
 
       # 下载待修补的应用
       - name: 下载指定版本的QQ
-        run: wget -O QQ-custom.apk https://9df5a2efbf8dbcf7212ae1c03db9eb6d.dlied1.cdntips.net/imtt.dd.qq.com/sjy.20003/sjy.00004/70F9FEB84B66FE6D/16891/apk/8700D81D885A67C33771A9D532331B55.apk?mkey=66bf3a7d7066d49c&f=cc3a&fsname=com.tencent.mobileqq_9.0.85.apk&csr=db5e&cip=112.102.242.105&proto=https
-      # 使用GitHub CLI下载模块最新Release版本
+        run: wget -O QQ-custom.apk https://dl.coolapk.com/down?pn=com.tencent.mobileqq&id=MzgzNA&h=aefedf55ryt58j
       - name: 下载模块
         run: |
           gh release download -O QAuxiliary.apk --repo cinit/QAuxiliary     --pattern '*arm64.apk'
